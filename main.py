@@ -1,8 +1,14 @@
 from boltiotai import openai
+from dotenv import load_dotenv
 import os
 from flask import Flask, render_template, request
 
-GET_API_KEY=os.environ['GET_API_KEY']
+load_dotenv()
+
+GET_API_KEY = os.environ.get("GET_API_KEY")
+if not GET_API_KEY:
+    raise Exception("GET_API_KEY not found in environment variables.")
+
 openai.api_key = GET_API_KEY
 default_items="Water, Oil, Salt"
 def generate_recipe(components):
@@ -39,4 +45,4 @@ def generate():
  return generate_recipe(components)
 
 if __name__ == '__main__':
- app.run(host='0.0.0.0', port=8080)
+ app.run(port=5000)
