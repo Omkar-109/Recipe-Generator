@@ -6,3 +6,17 @@ The application is developed using Flask and uses ChatGPT API for recipe generat
 
 ### Website Screenshot
 ![Web capture_16-9-2024_105526_127 0 0 1](https://github.com/user-attachments/assets/3603f570-17e0-4bf6-a997-bd0c43b4f1d0)
+
+### You can try the Recipe Generator website live here:  
+👉 [custom-recipe-generator.onrender.com](https://custom-recipe-generator.onrender.com/)
+
+
+## 🚀 Deployed with Render
+
+This Flask-based Recipe Generator is deployed on [Render](https://render.com/), which automatically builds and hosts the web app from the GitHub repository.
+
+### Deployment Details
+
+- **Backend:** Flask (Python)
+- **Production Server:** Gunicorn
+- **Hosting:** Render (Free Tier)
